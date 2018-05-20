@@ -1,0 +1,19 @@
+<div class="board">
+
+  <!-- Add click event binding for this button... -->
+  <button (click)="show = !show"
+    style="margin: 20px 0"
+    >
+    New Task
+  </button>
+
+  <div *ngIf="show" class="lists">
+    <!-- Markup for task lists here... -->
+    <task-form> </task-form>
+  </div>
+
+  <div class="lists">
+    <!-- Markup for task lists here... -->
+    <task-list> </task-list>
+  </div>
+</div>
